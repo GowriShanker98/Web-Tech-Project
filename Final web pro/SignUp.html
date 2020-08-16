@@ -1,0 +1,43 @@
+<!doctype html>
+<head>
+<title>Sign Up | Register</title>
+<link href="SignUp.css" rel="stylesheet">
+</head>
+<body>
+<h1>SIGN UP</h1></br>
+<form action="login.html" onsubmit="return Register()">
+First name : &nbsp; <input type="text" placeholder=" "  required> &nbsp; &nbsp; &nbsp; &nbsp; Last name : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" placeholder=" " required></br></br>
+Contact : &nbsp;&nbsp; &nbsp; <input type="text" placeholder=" " pattern='^[6-9]{1}\d{9}$' required> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D.O.B :  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="date" required></br></br>
+Email : &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <input type="email" placeholder=" " id="user" required> &nbsp; &nbsp; &nbsp; &nbsp; Confirm Email : &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <input type="text" placeholder=" " id="Cuser" required></br></br>
+Password :  &nbsp; &nbsp; &nbsp;<input type="password" placeholder=" " id="pass" required> &nbsp; &nbsp; &nbsp; &nbsp;Confirm Password : &nbsp;&nbsp;&nbsp; &nbsp; <input type="password" placeholder=" " id="Cpass" required></br></br>
+<button>Register</button>
+</form></br>
+<p align="center">After clicking the register button, Click here to <a href="Login.html">Login</a></p>
+
+<script>
+    function Register(){
+        var email=document.getElementById("user")
+        var Cemail=document.getElementById("Cuser")
+        var password=document.getElementById("pass")
+        var Cpassword=document.getElementById("Cpass")
+
+        if (email.value===Cemail.value){
+            if (password.value===Cpassword.value){
+                alert("SignUp successful.  Click on Login button to SignIn")
+                return true
+            }
+            else{
+                alert("Password doesn't match")
+                return false
+            }
+        }
+        else{
+            alert("email doesn't match")
+            return false
+        }
+    }
+
+</script>
+</body>
+
+ 

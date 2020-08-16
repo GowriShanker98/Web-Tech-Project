@@ -1,0 +1,36 @@
+body{
+	background-image:linear-gradient(45deg,violet,lightblue,blue);
+}
+h1{
+	color:violet;
+	text-align:center;
+	text-transform:capitalize;
+	text-decoration:underline;
+	font-size:80px;
+}
+
+td{
+	text-align:center;
+	border:2px solid red;
+	padding:33px;
+	color:yellow;
+	font-size:45px;
+}
+p{
+	color:black;
+	text-align:center;
+	font-size:30px;
+}
+
+del{
+	color:red;
+}
+a{
+	text-decoration:underline;
+	color:blue;
+}
+a:hover{
+	color:green;
+}
+
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+<title>Login</title>
+<link href="login.css" rel="stylesheet">
+</head>
+<body>
+<h1>Welcome to Login</h1><br>
+
+<form action="login1.html" onsubmit="return valid()">
+Username: <input type="text" placeholder=" " id="User" ></br></br>
+<button>Proceed</button>
+</form>
+<br><br>
+
+If, You are a new user, Click here to <a href="SignUp.html">Register</a>
+
+<script>
+    function valid(){
+        var User = document.getElementById("User");
+        var reg = /^[A-Za-z]+[0-9]{1}$/;
+        if (reg.test(User.value)){
+            alert("Username accepted")
+            return true;
+        }
+        else{
+            alert("Invalid Username, Username should contains alphanumeric. atleast a num should be present at last")
+            return false;
+        }
+    }
+
+</script>
+</body>

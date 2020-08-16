@@ -1,0 +1,26 @@
+body{
+	background-image: url(Images/1.jpg);
+	background-attachment: fixed;
+	background-size: cover;	
+}	
+h1{
+	text-align: center;
+	font-size: 60px;
+}
+table{
+	border: 1px solid;
+	padding:10px;
+	border-radius: 20px 20px 20px 20px;
+	margin-left: 150px;
+	margin-right: 1000px;
+	margin-top: 100px;
+	text-align: justify;
+	background-color: pink;
+	font-size: 35px;
+}
+
+video{
+	margin-left:1100px;
+	margin-top:-990px;
+}
+	

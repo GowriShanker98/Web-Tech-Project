@@ -1,0 +1,22 @@
+body{
+	background-image:url(Images/wedding.jpg);
+	background-size:cover;
+	background-repeat: norepeat;
+}
+h1{
+	font-family: alergian;
+	font-size: 100px;
+	text-align: center;
+	text-decoration:underline;
+	color:red;
+}
+
+td{
+	color:yellow;
+	border: 10px solid pink;
+	padding:46px;
+	text-align:center;
+	font-family:calibiri;
+	font-size: 35px;
+}
+

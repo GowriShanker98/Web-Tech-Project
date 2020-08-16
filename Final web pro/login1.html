@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+<title>Login</title>
+<link href="login.css" rel="stylesheet">
+</head>
+<body>
+<h1>Welcome to Login</h1><br>
+
+
+<form action="Dashboard.html" onsubmit="return valid()">
+Password: <input type="password" placeholder=" " id="Pass" ><br><br>
+<button>login</button>
+</form>
+<br><br>
+
+If, you forgot your password, click here to Reset your password. 
+<a href="Forgot.html">Reset Password</a>
+
+<script>
+    function valid(){
+        var Passkey = document.getElementById("Pass");
+        var reg = /^[A-Z a-z !@$%&* 0-9]{8,15}$/;
+        if (reg.test(Passkey.value)){
+            alert("Password accepted")
+            return true;
+        }
+        else{
+            alert("Password invalid")
+            return false;
+        }
+    }
+
+    
+</script>
+</body>

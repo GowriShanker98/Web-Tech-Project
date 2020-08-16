@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body{
+            background-color: gold;
+        }
+        form{
+            border:3px solid green;
+            padding: 25px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.html" onsubmit="return forgot()">
+        Email: <input type="email" placeholder=" " id="email" > <br>
+        password: <input type="password" placeholder=" " id="Pass"> <br>
+        Re-type: <input type="password" placeholder=" " id="CPass">
+        <input type="submit" >
+    </form>
+    
+
+    <script>       
+        function forgot(){
+            var passkey = document.getElementById("Pass");
+            var Passkey1 = document.getElementById("CPass");
+        
+            if(Passkey.value.trim()==Passkey1.value.trim()){
+                alert("Password accepted"); 
+                return true;     
+            }
+            else{
+                alert("Passwords doesnot match");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
